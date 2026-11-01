@@ -1,0 +1,61 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+    "spacing": 8,
+
+    "modules-left": [
+        "sway/workspaces"
+    ],
+
+    "modules-center": [
+        "sway/window"
+    ],
+
+    "modules-right": [
+        "clock",
+	"custom/cputemp",
+        "custom/gputemp",
+        "wireplumber",
+        "tray"
+    ],
+
+    "sway/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true
+    },
+
+    "clock": {
+        "format": "<span font='10'> {:%H:%M} </span>"
+    },
+
+    "sway/window": {    
+	"format": "<span font='12' rise='-4444'>{}</span>"  
+},
+
+    "wireplumber": {
+        "format": "{icon} {volume}%",
+        "format-muted": "󰖁",
+        "format-icons": [
+            "",
+            "",
+            ""
+        ]
+    },
+
+    "custom/cputemp": {
+        "exec": "~/.config/waybar/scripts/cputemp.sh",
+        "interval": 5
+    },
+
+    "custom/gputemp": {
+        "exec": "~/.config/waybar/scripts/gputemp.sh",
+        "interval": 5
+    },
+
+    "tray": {
+	"icon-size": 16,
+        "spacing": 10,
+	"show-passive-items": true
+    }
+}

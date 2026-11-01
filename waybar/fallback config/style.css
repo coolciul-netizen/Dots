@@ -1,0 +1,94 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font", "Symbols Nerd Font", sans-serif;
+    font-size: 12px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: transparent;
+}
+
+/* Wyspa 0: Launcher */
+#custom-launcher {
+    background-color: #000000;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 2px 10px;
+    color: #ffffff;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+#custom-launcher:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+/* Wyspa 1: Obszary robocze */
+#workspaces {
+    background-color: #000000;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 2px 6px;
+}
+
+#workspaces button {
+    padding: 2 8px;
+    background-color: transparent;
+    color: #888888;
+    border-radius: 8px;
+    margin: 2px 1px;
+}
+
+#workspaces button.focused {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+#workspaces button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
+
+/* Wyspa 2: Środkowa wyspa */
+#window {
+    background-color: #000000;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 2px 16px;
+    margin: 0;
+    color: #ffffff; 
+    font-weight: normal;
+}
+/* Wyspa: Tray (oddzielna) */
+#tray {
+    background-color: #000000;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px 10px;
+    margin-left: 10px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+}
+/* Wyspa: System (clock/cpu/memory) */
+#system {
+    background-color: #000000;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 3px 6px;
+}
+#clock,
+#cpu,
+#memory {
+    padding: 3 8px;
+    margin: 3px 2px;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+}

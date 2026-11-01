@@ -1,0 +1,68 @@
+* {
+    background-color:   transparent;
+    text-color:         #ffffff;
+    font:               "JetBrains Mono 11";
+}
+
+window {
+    background-color:   #00000099;
+    border:             1px;
+    border-color:       #ffffff33;
+    border-radius:      0px;
+    width:              300px;
+    padding:            10px;
+    location:           northeast;
+    y-offset:           45px;
+    x-offset:           -278px;
+}
+
+mainbox {
+    background-color:   transparent;
+    spacing:            0px;
+    padding:            0px;
+}
+
+inputbar {
+    enabled:            false; 
+}
+prompt {
+    background-color:   transparent;
+    enabled:            false;
+    padding:            0px 8px 0px 0px;
+}
+
+entry {
+    background-color:   transparent;
+    text-color:         #ffffff;
+    placeholder:        "Search...";
+    placeholder-color:  #ffffff4d;
+}
+
+listview {
+    background-color:   transparent;
+    padding:            6px 0px 0px 0px;
+    spacing:            2px;
+    lines:              4;
+}
+
+element {
+    background-color:   transparent;
+    padding:            11px 13px;
+    spacing:            7px;
+    border-radius:      0px;
+}
+
+element selected {
+    background-color:   #ffffff26;
+}
+
+element-icon {
+    size:               28px;
+    background-color:   transparent;
+}
+
+element-text {
+    background-color:   transparent;
+    text-color:         #ffffff;
+    vertical-align:     0.5;
+}

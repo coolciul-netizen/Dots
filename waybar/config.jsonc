@@ -1,0 +1,71 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 10,
+    "margin-top": 5,
+    "margin-left": 15,
+    "margin-right": 15,
+    "fixed-center": true,
+
+    "modules-left": ["custom/launcher", "sway/workspaces", "custom/media"],
+    "modules-center": ["sway/window"],
+    "modules-right": ["group/system", "tray"],
+
+    "group/system": {
+        "orientation": "horizontal",
+        "modules": ["clock", "cpu", "memory"]
+    },
+
+    "custom/launcher": {
+        "format": "",
+        "on-click": "rofi -show drun -theme /home/michal/.config/rofi/monochromes/monochrome-gentooikon.rasi -show-icons",
+        "tooltip": false
+    },
+
+    "sway/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "format": "{name}"
+    },
+
+    "custom/media": {
+        "format": "{}",
+        "return-type": "json",
+        "max-length": 20,
+        "exec": "~/.config/waybar/scripts/mediaplayer.sh",
+        "on-click": "playerctl play-pause",
+        "on-click-right": "playerctl stop",
+        "on-scroll-up": "playerctl next",
+        "on-scroll-down": "playerctl previous",
+        "tooltip": true
+    },
+
+    "sway/window": {
+        "format": "{title}",
+        "min-length": 130,
+        "max-length": 130,
+        "separate-outputs": true,
+        "rewrite": {
+            "^$": "Desktop"
+        }
+    },
+
+    "clock": {
+        "format": "{:%H:%M}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+
+    "cpu": {
+        "format": "⚡ {usage}%",
+        "tooltip": false
+    },
+
+    "memory": {
+        "format": "🧠 {percentage}%"
+    },
+
+    "tray": {
+        "icon-size": 18,
+        "spacing": 8
+    }
+}

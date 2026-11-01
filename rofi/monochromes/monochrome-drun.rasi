@@ -1,0 +1,77 @@
+/* Monochrome Pitch-Black & White Rofi Theme */
+
+* {
+    bg:             #000000;
+    bg-alt:         #121212;
+    fg:             #FFFFFF;
+    fg-alt:         #888888;
+    border-col:     #FFFFFF;
+
+    background-color:   transparent;
+    text-color:         @fg;
+    font:               "JetBrains Mono Medium 12";
+}
+
+window {
+    background-color:   @bg;
+    border:             1px;
+    border-color:       @border-col;
+    border-radius:      0px;
+    width:              500px;
+    padding:            20px;
+}
+
+mainbox {
+    spacing:            16px;
+    children:           [ inputbar, listview ];
+}
+
+inputbar {
+    background-color:   @bg-alt;
+    border:             1px;
+    border-color:       #262626;
+    padding:            10px 14px;
+    spacing:            10px;
+    children:           [ entry ];
+}
+
+//prompt {
+//    text-color:         @fg;
+//    str:                "drun >";
+//}
+
+entry {
+    text-color:         @fg;
+    placeholder:        "Search...";
+    placeholder-color:  @fg-alt;
+}
+
+listview {
+    lines:              8;
+    columns:            1;
+    fixed-height:       true;
+    spacing:            4px;
+    cycle:              true;
+}
+
+element {
+    padding:		10px 12px;
+    border-radius:      6px;
+    background-color:   @bg;
+    text-color:         @fg-alt;
+}
+
+element selected {
+    background-color:   @fg;
+    text-color:         @bg;
+}
+
+element-text {
+    text-color:         inherit;
+    vertical-align:     0.5;
+}
+
+element-icon {
+    size:               20px;
+    padding:            0 8px 0 0;
+}

@@ -1,0 +1,66 @@
+* {
+    background-color:   transparent;
+    text-color:         #ffffff;
+    font:               "JetBrains Mono 12";
+}
+
+window {
+    location:           northeast;
+    background-color:   #00000099;
+    border:             1px;
+    border-color:       #ffffff33;
+    border-radius:      0px;
+    width:              250px;
+    padding:            10px;
+    x-offset:           -17px;
+    y-offset:           45px;
+}
+
+mainbox {
+    background-color:   transparent;
+    spacing:            0px;
+    padding:            0px;
+}
+
+
+prompt {
+    background-color:   transparent;
+    enabled:            false;
+    padding:            0px 8px 0px 0px;
+}
+
+entry {
+    enabled:            false;
+}
+inputbar {
+    enabled:            false;
+}
+
+listview {
+    background-color:   transparent;
+    padding:            6px 0px 0px 0px;
+    spacing:            2px;
+    lines:              4;
+}
+
+element {
+    background-color:   transparent;
+    padding:            13px 15px;
+    spacing:            7px;
+    border-radius:      0px;
+}
+
+element selected {
+    background-color:   #ffffff26;
+}
+
+element-icon {
+    size:               28px;
+    background-color:   transparent;
+}
+
+element-text {
+    background-color:   transparent;
+    text-color:         #ffffff;
+    vertical-align:     0.5;
+}

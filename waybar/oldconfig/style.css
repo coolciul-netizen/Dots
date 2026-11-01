@@ -1,0 +1,86 @@
+* {
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 14px;
+}
+window#waybar {
+    background: black;
+    color: white;
+    border-bottom: 1px solid rgba(255,255,255,0.35);
+}
+
+/* Module style */
+
+
+
+#clock,
+#wireplumber,
+#network,
+#battery,
+#tray,
+#custom-cputemp,
+#custom-gputemp,
+#workspaces {
+    padding: 0;
+    margin: 0;
+}
+
+#workspaces button {
+    background: transparent;
+    color: #b5b5b5;
+
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 3px;
+
+    padding: 0 5px;
+    margin: 1px 2px;
+
+    min-height: 0;
+    min-width: 0;
+}
+
+#workspaces button.active,
+#workspaces button.focused {
+    background: #ffffff;
+    color: #000000;
+
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+}
+
+#workspaces button:hover {
+    background: rgba(255,255,255,0.15);
+}#clock {
+    color: white;
+    font-weight: bold;
+}
+
+/* Colors */
+
+#custom-cputemp {
+    color: #fab387;
+}
+
+#custom-gputemp {
+    color: #89b4fa;
+}
+
+#wireplumber {
+    color: #f9e2af;
+}
+
+#network {
+    color: #94e2d5;
+}
+
+#battery {
+    color: #a6e3a1;
+}
+
+tooltip {
+    background: #000;
+    color: white;
+    border-radius: 8px;
+}
